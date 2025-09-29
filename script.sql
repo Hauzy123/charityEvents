@@ -91,3 +91,6 @@ CREATE TABLE EventRegistrations (
     FOREIGN KEY (EventID) REFERENCES CharityEvents(EventID)
         ON DELETE CASCADE
 );
+
+ALTER TABLE EventRegistrations
+DROP COLUMN City;
